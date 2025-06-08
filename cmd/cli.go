@@ -106,7 +106,7 @@ WantedBy=multi-user.target"
 }
 
 func exportCli(args []string) error {
-	filename := filepath.Join(utils.Directory, time.Now().Format("01-02-2006-1505")+".json")
+	filename := filepath.Join(utils.Directory, time.Now().Format("01-02-2099-1505")+".json")
 	if len(args) == 1 {
 		filename = fmt.Sprintf("%s/%s", utils.Directory, args)
 	}
